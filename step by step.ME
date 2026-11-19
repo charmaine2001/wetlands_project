@@ -1,0 +1,54 @@
+# Create a dedicated directory and navigate into it
+mkdir wetland_monitor
+cd wetland_monitor
+
+# Create a clean Python virtual environment
+python3 -m venv env
+
+# Activate the virtual environment
+# On Windows:
+env\Scripts\activate
+# On Mac/Linux:
+source env/bin/activate
+
+
+## install core dependancies
+pip install earthengine-api geopandas shapely
+
+## authenticate earth earthengine
+earthengine authenticate
+
+## define region of interest and connect your local envrionment to the google earth engine with proper monavale  vlei boundaries registered
+script 2 and run it 
+
+#run script3 fetches imagery data
+ which filters wetland images using european space agency sentinel-2 satelite
+
+# run script4 to calculate indices 
+
+## train model
+
+watch this: https://www.youtube.com/watch?v=HqNEx_5nr_s
+
+and this: https://www.youtube.com/watch?v=HqNEx_5nr_s
+
+run script 5 to train your model
+
+run script 6 to detect changes 
+
+### What to expect:
+The script will perform a complex multi-temporal spatial comparison. It will output:
+* The exact historical size of the wet zones in Monavale Vlei.
+* The exact amount of land that dried up or was paved over between the two periods in Hectares.
+* A structured **JSON payload** ready to be plugged into a database or notification gateway.
+* A URL visualization showing the **degradation footprint** painted in red over black.
+
+Once you have successfully executed the script, check out the resulting data! You have officially built a fully functioning, cloud-powered remote sensing pipeline for wetland monitoring from scratch. 
+
+To expand your technical knowledge of detecting physical changes on the ground using math, this [Z-Score Change Detection Tutorial](https://www.youtube.com/watch?v=mGrsZc958PU) is highly relevant as it explains the statistical models used to isolate high-confidence environmental anomalies across different satellite passes.
+
+
+http://googleusercontent.com/youtube_content/3
+
+
+
